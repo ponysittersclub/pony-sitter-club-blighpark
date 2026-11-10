@@ -607,6 +607,14 @@ section:not(.hero){
 .brand{display:flex!important;align-items:center;flex:0 0 auto;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
 .brand img{display:block;width:76px;height:76px;max-height:none;object-fit:contain;border-radius:16px}
 @media(max-width:760px){.brand{justify-content:flex-start;width:auto}.brand img{width:68px;height:68px;max-height:none}}
+
+.christmas-reminder{padding:30px clamp(22px,8vw,120px);background:rgba(255,248,224,.94);border-top:1px solid #f0dfa8;border-bottom:1px solid #f0dfa8}
+.christmas-reminder-inner{max-width:1050px;margin:auto;display:flex;align-items:center;justify-content:center;gap:22px;text-align:center;padding:22px 26px;border:1px solid #e9d8a6;border-radius:22px;background:#fffdf4;box-shadow:0 10px 26px #735c2512}
+.christmas-icon{font-size:2.5rem;flex:0 0 auto}
+.christmas-kicker{display:inline-block;padding:5px 10px;border-radius:999px;background:#e4f4fd;color:#477fa2;font-size:.73rem;font-weight:900;letter-spacing:.08em}
+.christmas-reminder h2{display:table;margin:10px auto;padding:8px 13px;border:1px solid #f0e3b9;border-radius:13px;background:#fff6d9;color:#29465b;font-size:clamp(1.25rem,3vw,1.8rem);line-height:1.25}
+.christmas-reminder p{margin:0 auto;padding:7px 12px;border:1px solid #f0e6c9;border-radius:12px;background:#fffaf0;color:#526a7a}
+@media(max-width:520px){.christmas-reminder-inner{gap:10px;padding:18px 12px}.christmas-icon{font-size:1.7rem}}
 </style>
 </head>
 <body>
@@ -625,6 +633,13 @@ section:not(.hero){
     <div class="actions"><a class="btn" href="#menu">See the lemonade ↓</a><a class="btn alt" href="#contact">Contact us</a></div>
   </div>
   <div class="lemon-art" aria-label="Illustration of a glass of lemonade"><span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">✦</span><div class="glass"><div class="straw"></div><div class="lemon"></div></div></div>
+</section>
+<section class="christmas-reminder" aria-labelledby="christmas-title">
+  <div class="christmas-reminder-inner">
+    <span class="christmas-icon" aria-hidden="true">🎄</span>
+    <div><span class="christmas-kicker">A FESTIVE LITTLE REMINDER</span><h2 id="christmas-title">Wear your Christmas clothes to our stall! 🎅</h2><p>Get into the Christmas spirit when you come and visit us. We can’t wait to see your festive outfits!</p></div>
+    <span class="christmas-icon" aria-hidden="true">🎁</span>
+  </div>
 </section>
 <section id="about">
   <div class="about-grid">
